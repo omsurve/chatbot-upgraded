@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/admin.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #1f4037, #99f2c8);
+      color: #fff;
+      min-height: 100vh;
+    }
+  
+    h2 {
+      text-align: center;
+      padding: 30px 0 10px;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+  
+    table {
+      width: 90%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #ffffff;
+      color: #333;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+  
+    thead {
+      background: #2c3e50;
+      color: #ecf0f1;
+    }
+  
+    th, td {
+      padding: 18px 20px;
+      text-align: left;
+    }
+  
+    tbody tr:nth-child(even) {
+      background: #f7f9fc;
+    }
+  
+    tbody tr:hover {
+      background-color: #e3f2fd;
+    }
+  
+    .btn {
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+    }
+  
+    .edit-btn {
+      background: #3498db;
+      color: white;
+    }
+  
+    .edit-btn:hover {
+      background: #2980b9;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #3498db88;
+    }
+  
+    .delete-btn {
+      background: #e74c3c;
+      color: white;
+      margin-left: 10px;
+    }
+  
+    .delete-btn:hover {
+      background: #c0392b;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #e74c3c99;
+    }
+  
+    td[contenteditable="true"] {
+      background: #fff8e1;
+      border: 1px dashed #ccc;
+    }
+  
+    @media screen and (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+  
+      thead {
+        display: none;
+      }
+  
+      tr {
+        margin-bottom: 15px;
+        background: #fff;
+        border-radius: 10px;
+      }
+  
+      td {
+        padding: 10px;
+        text-align: right;
+        position: relative;
+      }
+  
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        color: #777;
+        text-align: left;
+      }
+    }
+  </style>
+  
+  
+</head>
+<body>
+  <h2>📋 Admin Dashboard - Registered Users</h2>
+
+  <table id="user-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="user-table-body">
+      <!-- JS will populate this -->
+    </tbody>
+  </table>
+
+  <script src="js/admin-dashboard.js"></script>
+</body>
+</html>

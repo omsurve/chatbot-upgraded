@@ -1,0 +1,114 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .container {
+    background: #1e1e2f;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f9f9f9;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #2d2d44;
+    color: #fff;
+  }
+  
+  input::placeholder {
+    color: #aaa;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #50fa7b;
+    color: #1e1e2f;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #38c172;
+  }
+  
+  #chat-box {
+    background: #2d2d44;
+    padding: 15px;
+    border-radius: 8px;
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+  }
+  
+  #chat-box p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  #chat-box button {
+    background-color: #21a1f1;
+    color: #fff;
+    margin: 5px 5px 0 0;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+  }
+  
+  #chat-box button:hover {
+    background-color: #0d8ddb;
+  }
+  #logout-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  #logout-btn:hover {
+    background-color: #c0392b;
+  }
+
+  
+  

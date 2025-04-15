@@ -1,0 +1,18 @@
+{
+    "start": {
+        "question": "How can I help you today?",
+        "options": ["Admission", "Courses", "Contact"]
+    },
+    "Admission": {
+        "question": "Admission is open for 2025. Do you want to apply?",
+        "options": ["Yes", "No"]
+    },
+    "Courses": {
+        "question": "We offer BCA, MCA, and BBA.",
+        "options": ["Back"]
+    },
+    "Contact": {
+        "question": "Call us at 1234567890.",
+        "options": ["Back"]
+    }
+}

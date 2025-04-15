@@ -1,0 +1,89 @@
+{
+  "start": {
+    "question": "Welcome to our college chatbot! How can I assist you today?",
+    "options": ["Courses", "Admission", "Fees", "Placement", "Campus Life", "Contact"]
+  },
+
+  "Courses": {
+    "question": "We offer MCA, BCA, BBA, and MBA. Which course are you interested in?",
+    "options": ["MCA", "BCA", "BBA", "MBA", "Back"]
+  },
+  "MCA": {
+    "question": "MCA is a 2-year postgraduate program focused on software development and IT skills.",
+    "options": ["Eligibility", "Fees", "Back"]
+  },
+  "BCA": {
+    "question": "BCA is a 3-year undergraduate course in computer applications.",
+    "options": ["Eligibility", "Fees", "Back"]
+  },
+  "BBA": {
+    "question": "BBA is a 3-year program focusing on business administration and management.",
+    "options": ["Eligibility", "Fees", "Back"]
+  },
+  "MBA": {
+    "question": "MBA is a 2-year postgraduate degree focusing on business strategy and leadership.",
+    "options": ["Eligibility", "Fees", "Back"]
+  },
+
+  "Eligibility": {
+    "question": "Eligibility varies by course. For postgrad (MCA/MBA), graduation is required. For undergrad (BCA/BBA), 12th pass is needed.",
+    "options": ["Back"]
+  },
+
+  "Fees": {
+    "question": "Fees structure is as follows:\nMCA: ₹80,000/year\nMBA: ₹90,000/year\nBCA: ₹50,000/year\nBBA: ₹55,000/year",
+    "options": ["Back"]
+  },
+
+  "Admission": {
+    "question": "Admissions are open! You can apply online or schedule a call with our team.",
+    "options": ["Apply Now", "Schedule Call", "Back"]
+  },
+  "Apply Now": {
+    "question": "Visit our official website to fill out the application form.",
+    "options": ["Back"]
+  },
+  "Schedule Call": {
+    "question": "Please share your details. Our team will reach out to you soon.",
+    "options": ["Back"]
+  },
+
+  "Placement": {
+    "question": "We have a strong placement record with top companies like TCS, Infosys, Wipro, and HDFC Bank.",
+    "options": ["Placement Stats", "Top Recruiters", "Back"]
+  },
+  "Placement Stats": {
+    "question": "Average package: ₹4.5 LPA, Highest: ₹12 LPA. Over 85% of students placed annually.",
+    "options": ["Back"]
+  },
+  "Top Recruiters": {
+    "question": "Top recruiters include TCS, Infosys, Capgemini, HDFC Bank, and Tech Mahindra.",
+    "options": ["Back"]
+  },
+
+  "Campus Life": {
+    "question": "Our campus features a library, sports complex, cafeteria, Wi-Fi, and cultural fests!",
+    "options": ["Clubs", "Facilities", "Back"]
+  },
+  "Clubs": {
+    "question": "We have tech, business, cultural, and sports clubs. Students can join as per their interest.",
+    "options": ["Back"]
+  },
+  "Facilities": {
+    "question": "Facilities include smart classrooms, computer labs, hostel, gym, and more.",
+    "options": ["Back"]
+  },
+
+  "Contact": {
+  "question": "You can reach us at info@college.com or call 123-456-7890. Or chat with us directly on WhatsApp!",
+  "options": ["Chat on WhatsApp", "Back"],
+  "link": {
+    "Chat on WhatsApp": "https://wa.me/9604940685"  
+  }
+},
+
+  "Back": {
+    "question": "Taking you back. What would you like to know?",
+    "options": ["Courses", "Admission", "Fees", "Placement", "Campus Life", "Contact"]
+  }
+}

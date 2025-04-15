@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chatbot</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- OTP Login UI -->
+    <div id="login-section">
+      <input type="email" id="email" placeholder="Enter Email" />
+      <button onclick="sendOTP()">Send OTP</button>
+    
+      <div id="otp-section" style="display: none;">
+        <input type="text" id="otp" placeholder="Enter OTP" />
+        
+        <!-- Name & phone (hidden by default) -->
+        <input type="text" id="name" placeholder="Your Name" style="display: none;" />
+        <input type="text" id="phone" placeholder="Your Phone Number" style="display: none;" />
+    
+        <button onclick="verifyOTP()">Verify OTP</button>
+      </div>
+    </div>
+    
+    <div id="chat-section" style="display: none;">
+      <button id="logout-btn" onclick="logout()">Logout</button>
+      <h2>Chatbot</h2>
+      <div id="chat-box"></div>
+    </div>
+    
+    
+
+    <!-- Chat UI -->
+    <div id="chat-section" style="display:none;">
+      <h2>Chatbot</h2>
+      <div id="chat-box"></div>
+    </div>
+  </div>
+
+  <script src="js/chatbot.js" defer></script>
+</body>
+</html>
